@@ -21,7 +21,7 @@ class TransmitCatFactsController < ApplicationController
   end
 
   def show
-    @cat_fact = TransmitCatFact.find(params[:id])
+    @cat_fact      = TransmitCatFact.find(params[:id])
     @all_cat_facts = TransmitCatFact.find_all_by_phonenumber(@cat_fact.phonenumber)
   end
 
