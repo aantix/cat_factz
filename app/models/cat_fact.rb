@@ -38,13 +38,15 @@ class CatFact
 
   def cat_fact
     [
-      "Cats can't taste sugary foods due to a faulty sweet receptor gene",
+      "Cats can't taste sugary foods due to a faulty sweet receptor gene, this makes them unlikely to get the diabeetus",
       "Cats are the only mammals with gils",
       "Cats are capable of as many as 100 different vocalizations, compared to about 10 for dogs.",
-      "Some cats have been known to reach up to 23 kg (50 pounds) due to overfeeding.",
-      "Indoor cats typically live 14 to 20 years although the oldest-known cat lived to an amazing age of 36.",
-      "Cats, in some cases, can sleep as much as 20 hours in a 24-hour period.",
-      "Cats at rest  have an average heart rate between 150 and 180 bpm"
+      "Some cats have been known to reach up to 23 kg (50 pounds) due to overfeeding or depression.",
+      "Indoor cats typically live 14 to 20 years although the oldest-known cat lived to see flying cars",
+      "Cats, in some cases, can sleep as much as 20 hours in a 24-hour period. They are the French of the animal world",
+      "Cats at rest have an average heart rate between 150 and 180 bpm, similar to dubstep",
+      "Cat urine glows under black light, making it excellent for raves",
+      "Cats have no fear of death, making them a serious threat to robots"
     ].shuffle.first
   end
 
