@@ -2,13 +2,14 @@ class TransmitCatFactsController < ApplicationController
   skip_before_filter :verify_authenticity_token, :only => :incoming
 
   def incoming
-    #TransmitCatFact.create!(:phonenumber => params["From"],
-                            #:message => params['Body'],
-                            #:sentreceived => 'received')
-    response = CatFact.send_error(params["From"], params['Body'])
-    #TransmitCatFact.create!(:phonenumber => params["From"],
-                            #:message => response,
-                            #:sentreceived => 'send')
+    msg = TransmitCatFact.create!(:message => params['Body'],
+                            :sentreceived => 'received')
+    if user = User.find_by_phonenumber(params["From"])
+      CatFact.new(user, msg).respond
+    else
+      user = User.create(:phonenumber => params["From"])
+      CatFact.new(user, msg).signup
+    end
     render :text => "Meow"
   end
 
