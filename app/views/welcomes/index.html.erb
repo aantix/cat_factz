@@ -1,1 +1,12 @@
-Welcome!
+<div class="logo">
+  <%= image_tag "cat_bear.jpeg" %>
+</div>
+
+<div class="well dial">
+  <%= form_for @transmit_cat_factz, :html => {:class => 'form-horizontal'} do |f| %>
+      <%= f.text_field :dial %>
+      <%= f.submit :dial, :class => 'btn' %>
+  <% end %>
+
+</div>
+
