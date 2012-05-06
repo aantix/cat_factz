@@ -2,18 +2,25 @@
 
 Written by Mark Percival (@mdp) and Jim Jones (@aantix)
 
-Send fun cat factz every hour for your friends using the Twillio API. App written for the Ballmer Peak-A-Thon programming contest. {ballmerpeakathon.com}[http://www.ballmerpeakathon.com]
+Send fun cat factz every hour for your friends using the Twillio API. App written for the Ballmer Peak-A-Thon (5/12/2012) programming contest. {ballmerpeakathon.com}[http://www.ballmerpeakathon.com]
 
 == Config
 
-Be sure to update the config/initializers/twilio.rb file with your own Twilio API key.
+- Update the config/initializers/twilio.rb file with your own Twilio API key.
 
-== Cron
+- To record the SMS messages that users respond back with :
 
-Setup a cron process to mail your friends fun Cat Factz.
+	- If you're running locally, setup a localtunnel with localtunnel.io 
+		localtunnel -k ~/.ssh/id_rsa.pub 3000
+	
+	- Config Twilio to post back to the URL provided by localtunnel (e.g. http://4u8s.localtunnel.com/transmit_cat_facts/incoming)
 
-*/60 * * * * cd /Users/aantix/dev/cat_factz && bundle exec rails runner -e development "User.cron_send_facts" 2>&1 >> /tmp/cat_factz.log
+- Setup the cron process (to send the repeat cat factz).
 
-== Screenshot
+	*/60 * * * * cd /Users/aantix/dev/cat_factz && bundle exec rails runner -e development "User.cron_send_facts" 2>&1 >> /tmp/cat_factz.log
+
+== Screenshots
 
 http://i.imgur.com/xX7xQ.png
+
+http://i.imgur.com/bulue.png
