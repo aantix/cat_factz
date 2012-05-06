@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  phonenumber: MyString
+  message: MyString
+  sentreceived: MyString
+
+two:
+  phonenumber: MyString
+  message: MyString
+  sentreceived: MyString
