@@ -1,29 +1,17 @@
 class CatFact
 
-  class << self
-    def signup(number)
-      c = self.new(number)
-      c.send_intro
-    end
-
-    def send_fact(number)
-      c = self.new(number)
-      c.send_fact
-    end
-
-    def send_error(number)
-      c = self.new(number)
-      c.send_error
-    end
-  end
-
-  def initialize(number)
-    @number = number
+  def initialize(user, incoming_message=nil)
     @client = TWILIO
+    @user = user
+    @incoming_message = incoming_message
   end
 
-  def send_fact
-    sms(cat_fact)
+  def send_message
+    if incoming_message
+      sms(error_message)
+    else
+      sms(cat_fact)
+    end
   end
 
   def send_intro
@@ -31,16 +19,14 @@ class CatFact
     sms(cat_fact)
   end
 
-  def send_error
-    sms(cat_fact)
-  end
-
   def sms(message)
+    TransmitCatFact.create(:user => @user, :message => message, :sentreceived => 'sent')
     @client.account.sms.messages.create(
       :from => '+12029050634',
-      :to => "+1#{@number}",
+      :to => "+1#{@user.phonenumber}",
       :body => message
     )
+    message
   end
 
   private
@@ -57,7 +43,7 @@ class CatFact
     ].shuffle.first
   end
 
-  def error_messages
+  def error_message
     [
       "I'm sorry, I didn't understand that last command. Respond 'meow' for help",
       "You must be a real cat fancier! You will now recieve one cat fact every 15 minutes. Meow!",
