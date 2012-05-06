@@ -1,7 +1,7 @@
 class CreateTransmitCatFacts < ActiveRecord::Migration
   def change
     create_table :transmit_cat_facts do |t|
-      t.string :phonenumber
+      t.integer :user_id
       t.string :message
       t.string :sentreceived
 

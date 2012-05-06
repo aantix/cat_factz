@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120506011256) do
+ActiveRecord::Schema.define(:version => 20120506032305) do
 
   create_table "transmit_cat_facts", :force => true do |t|
     t.string   "phonenumber"
@@ -19,6 +19,12 @@ ActiveRecord::Schema.define(:version => 20120506011256) do
     t.string   "sentreceived"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "phonenumber"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
 end

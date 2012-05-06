@@ -1,0 +1,6 @@
+<div class ="allmessages">
+    <h1><%= @user.phonenumber %></h1>
+    <div class="messages">
+      <%= render :partial => 'cat_fact_message', :collection => @user.transmit_cat_facts %>
+    </div>
+</div>

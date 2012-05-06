@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df18ccae-f785-4a28-826b-cbb9b6d32064" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/transmit_cat_facts/_cat_fact_message.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/welcomes/show.html.erb" afterPath="$PROJECT_DIR$/app/views/transmit_cat_facts/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/cat_factz.iml" afterPath="$PROJECT_DIR$/.idea/cat_factz.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/transmit_cat_facts/_cat_fact_message.html.erb" afterPath="$PROJECT_DIR$/app/views/users/_cat_fact_message.html.erb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/transmit_cat_facts/show.html.erb" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/transmit_cat_facts.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/transmit_cat_facts.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/transmit_cat_facts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/transmit_cat_facts_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/twilio.rb" afterPath="$PROJECT_DIR$/config/initializers/twilio.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20120506011256_create_transmit_cat_facts.rb" afterPath="$PROJECT_DIR$/db/migrate/20120506011256_create_transmit_cat_facts.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="cat_factz.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,82 +30,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/welcomes/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="21" selection-start="83" selection-end="83" vertical-scroll-proportion="-2.7142856">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="welcomes.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/welcomes.css.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="18" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="11" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="transmit_cat_facts_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/transmit_cat_facts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="36" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0">
+            <state line="16" column="0" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/transmit_cat_facts/show.html.erb">
+      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="5" column="20" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_cat_fact_message.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/transmit_cat_facts/_cat_fact_message.html.erb">
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="166" selection-end="237" vertical-scroll-proportion="0.31666666">
+            <state line="2" column="34" selection-start="91" selection-end="91" vertical-scroll-proportion="0.096938774">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="transmit_cat_facts.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/transmit_cat_facts.css.scss">
+      <file leaf-file-name="cat_fact.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/cat_fact.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="10" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/database.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="32" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="twilio.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/initializers/twilio.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="28" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0">
+            <state line="18" column="6" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -128,10 +79,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/controllers/welcomes_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/transmit_cat_fact.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/welcomes/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/welcomes.css.scss" />
@@ -140,10 +87,14 @@
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/config/initializers/twilio.rb" />
         <option value="$PROJECT_DIR$/app/views/welcomes/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/transmit_cat_facts_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/transmit_cat_facts/show.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/transmit_cat_facts.css.scss" />
         <option value="$PROJECT_DIR$/app/views/transmit_cat_facts/_cat_fact_message.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20120506011256_create_transmit_cat_facts.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/transmit_cat_facts_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
       </list>
     </option>
   </component>
@@ -278,7 +229,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="transmit_cat_facts" />
+              <option name="myItemId" value="users" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -423,6 +374,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/users" />
       <recent name="$PROJECT_DIR$/app/views/transmit_cat_facts" />
     </key>
   </component>
@@ -727,34 +679,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="24" selection-start="234" selection-end="234" vertical-scroll-proportion="0.58809525">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/rubies/ruby-1.9.2-p318/lib/ruby/1.9.1/cgi/html.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="775" column="8" selection-start="26982" selection-end="26982" vertical-scroll-proportion="0.046683047">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="20" selection-start="1607" selection-end="1607" vertical-scroll-proportion="-3.357143">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="35" selection-start="475" selection-end="475" vertical-scroll-proportion="0.8142857">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/welcomes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="11" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
@@ -769,27 +693,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20120506011256_create_transmit_cat_facts.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="31" selection-start="67" selection-end="67" vertical-scroll-proportion="0.045238096">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/transmit_cat_facts_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="36" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="11" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/welcomes.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="18" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0">
@@ -797,44 +700,93 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Rakefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="33" selection-start="272" selection-end="272" vertical-scroll-proportion="0.27142859">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="11" selection-start="84" selection-end="84" vertical-scroll-proportion="0.2800983">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/welcomes/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="21" selection-start="83" selection-end="83" vertical-scroll-proportion="-2.7142856">
+        <state line="4" column="21" selection-start="83" selection-end="83" vertical-scroll-proportion="0.19387755">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/twilio.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/users/_cat_fact_message.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="28" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="32" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/transmit_cat_facts/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="11" column="28" selection-start="325" selection-end="325" vertical-scroll-proportion="0.49761903">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/transmit_cat_facts.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="10" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
+        <state line="8" column="10" selection-start="239" selection-end="239" vertical-scroll-proportion="0.36190477">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/transmit_cat_facts/_cat_fact_message.html.erb">
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="166" selection-end="237" vertical-scroll-proportion="0.31666666">
+        <state line="22" column="32" selection-start="549" selection-end="549" vertical-scroll-proportion="0.77380955">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/twilio.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="28" selection-start="427" selection-end="427" vertical-scroll-proportion="0.5135135">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20120506011256_create_transmit_cat_facts.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="24" selection-start="136" selection-end="136" vertical-scroll-proportion="0.13571429">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="30" selection-start="62" selection-end="62" vertical-scroll-proportion="0.045238096">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/cat_fact.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="6" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/transmit_cat_facts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="20" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="34" selection-start="91" selection-end="91" vertical-scroll-proportion="0.096938774">
           <folding />
         </state>
       </provider>

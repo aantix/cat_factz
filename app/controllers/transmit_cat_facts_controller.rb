@@ -15,14 +15,12 @@ class TransmitCatFactsController < ApplicationController
   def create
     # Send cat fact to Twilio.
     # cat_fact = CatFact.signup(number)
-    @cat_fact = TransmitCatFact.start(params[:dial], CatFact.random)
+    @user = User.create(:phonenumber => params[:dial])
 
-    redirect_to @cat_fact
-  end
+    cat_fact = CatFact.new(@user)
+    message = cat_fact.send_intro
 
-  def show
-    @cat_fact      = TransmitCatFact.find(params[:id])
-    @all_cat_facts = TransmitCatFact.find_all_by_phonenumber(@cat_fact.phonenumber)
+    redirect_to @user
   end
 
 end
