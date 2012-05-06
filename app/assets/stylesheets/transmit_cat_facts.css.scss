@@ -1,3 +1,37 @@
 // Place all the styles related to the TransmitCatFacts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.allmessages{
+  margin:0px auto;
+  width: 400px;
+}
+
+.messages{
+  width: 200px;
+  text-align: center;
+}
+
+div.convorow1 {
+	border: 9px solid #4a525a;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	color: #4a525a;
+	width: 350px;
+	padding: 4px;
+	float: left;
+	margin-top: 14px;
+}
+
+div.convorow2 {
+	border: 9px solid #5a424a;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	color: #5a424a;
+	width: 350px;
+	padding: 4px;
+	float: right;
+	margin-top: 14px;
+}

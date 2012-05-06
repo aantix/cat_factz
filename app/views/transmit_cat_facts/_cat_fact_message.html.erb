@@ -1,0 +1,12 @@
+<% if cat_fact_message.sentreceived == 'sent' %>
+    <div class="convorow1">
+      <%=  cat_fact_message.message %>
+    </div>
+<% else %>
+    <div class="convorow2">
+      <%= image_tag "cat_operator.jpg", :width => 40, :height => 40 %>
+      <%= cat_fact_message.message %>
+    </div>
+<% end %>
+
+<div class="clearfix"></div>
