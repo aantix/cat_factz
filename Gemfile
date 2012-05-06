@@ -7,6 +7,8 @@ gem 'localtunnel'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'twilio-ruby'
+gem 'gibberish'
 
 
 # Gems used only for assets and not required

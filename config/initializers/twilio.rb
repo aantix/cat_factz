@@ -8,4 +8,4 @@ cipher = Gibberish::AES.new(ENV["PASSCODE"])
 auth_token = cipher.dec("U2FsdGVkX180haB0kdtOBwGJCsUW8Sxk+A6SsKBIWOxSDh/6riRS8E6h/77Z\nwDAYTY23yabXXBHB+8ks44gyBg==\n")
 #
 # # set up a client to talk to the Twilio REST API
-@client = Twilio::REST::Client.new account_sid, auth_token
+TWILIO = Twilio::REST::Client.new account_sid, auth_token
