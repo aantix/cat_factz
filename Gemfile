@@ -10,6 +10,8 @@ gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootst
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'twilio-ruby'
+gem 'gibberish'
 
 
 # Gems used only for assets and not required
