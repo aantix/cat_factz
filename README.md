@@ -1,6 +1,8 @@
 cat_factz
 =========
 
+Written by Mark Percival (@mdp) and Jim Jones (@aantix)
+
 Fun cat factz every hour for your friends. (ballmerpeakathon.com)
 
 
