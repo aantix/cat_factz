@@ -4,26 +4,31 @@ class CatFact
     @client = TWILIO
     @user = user
     @incoming_message = incoming_message
-  end
-
-  def send_message
     if incoming_message
-      sms(error_message)
-    else
-      sms(cat_fact)
+      incoming_message.update_attribute :user_id, user.id
     end
   end
 
-  def send_intro
+  def respond
+    if !@incoming_message && @user.transmit_cat_facts.where("sentreceived = 'sent'").count > 0
+      sms(cat_fact)
+    elsif @incoming_message && @user.transmit_cat_facts.where("sentreceived = 'sent'").count == 0
+      signup
+    else
+      sms(error_message)
+    end
+  end
+
+  def signup
     sms("Welcome to cat facts, you signed up to recieve one cat fact per hour. Meow")
     sms(cat_fact)
   end
 
   def sms(message)
-    TransmitCatFact.create(:user => @user, :message => message, :sentreceived => 'sent')
+    TransmitCatFact.create(:user_id => @user.id, :message => message, :sentreceived => 'sent')
     @client.account.sms.messages.create(
       :from => '+12029050634',
-      :to => "+1#{@user.phonenumber}",
+      :to => "#{@user.phonenumber}",
       :body => message
     )
     message

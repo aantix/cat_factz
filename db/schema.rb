@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(:version => 20120506032305) do
 
   create_table "transmit_cat_facts", :force => true do |t|
-    t.string   "phonenumber"
+    t.integer  "user_id"
     t.string   "message"
     t.string   "sentreceived"
     t.datetime "created_at",   :null => false

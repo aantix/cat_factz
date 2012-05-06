@@ -1,5 +1,6 @@
 CatFactz::Application.routes.draw do
   resources :welcomes
+  resources :users
   resources :transmit_cat_facts
   match "/incoming", :to => 'transmit_cat_facts#incoming'
 
