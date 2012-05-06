@@ -14,4 +14,14 @@ class User < ActiveRecord::Base
   def cleanup_phonenumber
     self.phonenumber = User.cleanup_phonenumber(self.phonenumber)
   end
+
+  def self.cron_send_facts
+    users = User.all
+
+    users.each do |user|
+      cat_fact = CatFact.new(user)
+      cat_fact.respond
+    end
+
+  end
 end
