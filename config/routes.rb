@@ -1,6 +1,7 @@
 CatFactz::Application.routes.draw do
   resources :welcomes
   resources :transmit_cat_facts
+  match "/incoming", :to => 'transmit_cat_facts#incoming'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

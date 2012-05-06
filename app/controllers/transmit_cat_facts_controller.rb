@@ -1,8 +1,9 @@
 class TransmitCatFactsController < ApplicationController
+  skip_before_filter :verify_authenticity_token, :only => :incoming
 
-  def received_message
-    TransmitCatFact.create!(:phonenumber => params[:phonenumber],
-                            :message => param[:message],
+  def incoming
+    TransmitCatFact.create!(:phonenumber => params["From"],
+                            :message => params['Body'],
                             :sentreceived => 'received')
   end
 
